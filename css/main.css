@@ -1,0 +1,40 @@
+/* Main css behind the prototype */
+
+/* General Theme override */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F0FFF0; 
+}
+
+body h1 {
+	font-family: 'arvo', serif;
+}
+
+body h2 {
+	font-family: 'Antic Slab', serif;
+}
+
+/* landing, main page */
+#landing {
+
+}
+#landing .title {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Nav Bar at bottom*/
+#tab-menu {
+	position: fixed;
+  	bottom: 0;
+  	background-color: #353839;
+  	color: #F0FFF0;
+  	width: 100%;
+  	height: 60px;
+}
+
+#tab-menu .item {
+	padding: 6px;
+}
