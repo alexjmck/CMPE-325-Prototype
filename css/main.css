@@ -15,16 +15,6 @@ body h2 {
 	font-family: 'Antic Slab', serif;
 }
 
-/* landing, main page */
-#landing {
-
-}
-#landing .title {
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
 /* Nav Bar at bottom*/
 #tab-menu {
 	position: fixed;
@@ -38,3 +28,21 @@ body h2 {
 #tab-menu .item {
 	padding: 6px;
 }
+
+/* landing, main page */
+#landing {
+
+}
+#landing .title {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Mood page css */
+#mood {
+
+}
+
+
+
