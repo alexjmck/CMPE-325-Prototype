@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-<!-- This is a blank template page to use for the project -->
 
 <head>
 
@@ -21,133 +20,105 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Main custom CSS -->
-    <link href="css/calender.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/calenderNEW.css" rel="stylesheet">
 
-    <!-- PAGE TITLE HERE -->
     <title>Landing page</title>
 </head>
 
+
+</head>
+
 <body>
-    <!-- Nav bar at bottom - If updated paste updated code on all pages -->
-    <section id="tab-menu">
-        <div class="container-flex">
-            <div class="row justify-content-center">
-                <a href="index.html">
-                    <div class="col-6 align-middle item">
-                        <h2>Home</h2>
-                    </div>
-                </a>
-                <a href="mood.html">
-                    <div class="col-6 align-middle item">
-                        <h2>Mood</h2>
-                    </div>
-                </a>
+    <!-- Nav bar at bottom - If updated paste updated code on all pages-->
+
+    <section>
+        <div class="container">
+            <div class="month">
+                <h1>April 2020</h1>
+            </div>
+            <div style="overflow-x:auto;" class="calen">
+                <table style=" width:100%">
+                    <tr>
+                        <th>Mo</th>
+                        <th>Tu</th>
+                        <th>We</th>
+                        <th>Th</th>
+                        <th>Fr</th>
+                        <th>Sa</th>
+                        <th>Su</th>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-outline-primary">01</button></td>
+                        <td><button class="btn-outline-primary">02</button></td>
+                        <td><button class="btn-outline-primary">03</button></td>
+                        <td><button class="btn-outline-primary">04</button></td>
+                        <td><button class="btn-outline-primary">05</button></td>
+                        <td><button class="btn-outline-primary">06</button></td>
+                        <td><button class="btn-outline-primary">07</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-outline-primary">08</button></td>
+                        <td><button class="btn-outline-primary">09</button></td>
+                        <td><button class="btn-outline-primary">10</button></td>
+                        <td><button class="btn-outline-primary">11</button></td>
+                        <td><button class="btn-outline-primary">12</button></td>
+                        <td><button class="btn-outline-primary">13</button></td>
+                        <td><button class="btn-outline-primary">14</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-outline-primary">15</button></td>
+                        <td><button class="btn-outline-primary">16</button></td>
+                        <td><button class="btn-outline-primary">17</button></td>
+                        <td><button class="btn-outline-primary">18</button></td>
+                        <td><button class="btn-outline-primary">19</button></td>
+                        <td><button class="btn-outline-primary">20</button></td>
+                        <td><button class="btn-outline-primary">21</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-outline-primary">22</button></td>
+                        <td><button class="btn-outline-primary">23</button></td>
+                        <td><button class="btn-outline-primary">24</button></td>
+                        <td><button class="btn-outline-primary">25</button></td>
+                        <td><button class="btn-outline-primary">26</button></td>
+                        <td><button class="btn-outline-primary">27</button></td>
+                        <td><button class="btn-outline-primary">28</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-outline-primary">29</button></td>
+                        <td><button class="btn-outline-primary">30</button></td>
+                        <td><button class="btn-outline-primary">31</button></td>
+                        <td><button class="btn-outline-primary">01</button></td>
+                        <td><button class="btn-outline-primary">02</button></td>
+                        <td><button class="btn-outline-primary">03</button></td>
+                        <td><button class="btn-outline-primary">04</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row usr-info">
+            <div class="col-12 title">
+                <h1>On the <span>20th</span> felt:</h1>
+            </div>
+            <div class="col-12">
+                <p class="usr-descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has b
+                </p>
             </div>
         </div>
     </section>
 
-    <div class="container">
-        <h1 class="tips-header">
-            Tips to manage your mood
-        </h1>
-        <div class="row">
-            <div class="col-sm">
-                <br>
-                <p>
-                    Last time, when you weren't feeling great was on the March 7th
-                    you started feeling better after doing , breathing and grounding
-                    exercises. Have you considered taking more time for yourself?
-                </p>
-                <p>
-                    You had a rough week from the 4th to the 9th but you made it through
-                    by spending time with family and going to therapy. Would that help you now?
-                </p>
+
+
+    <section id="landing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <nav class="navbar nav-pills nav-justified">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Mood Tracker</a>
+                </nav>
             </div>
-            <div class="col-sm">
-                <div class="container">
-                    <div class="calendar-base">
-                        <div class="year">2020</div>
-                        <!-- year -->
-                        <div class="triangle-left"></div>
-                        <!--triangle -->
-                        <div class="triangle-right"></div>
-                        <!--  triangle -->
-
-                        <div class="months">
-                            <span class="month-hover">Jan</span>
-                            <span class="month-hover">Feb</span>
-                            <strong class="month-hover">Mar</strong>
-                            <span class="month-color">Apr</span>
-                            <span class="month-hover">May</span>
-                            <span class="month-hover">Jun</span>
-                            <span class="month-hover">July</span>
-                            <span class="month-hover">Aug</span>
-                            <span class="month-hover">Sep</span>
-                            <span class="month-hover">Oct</span>
-                            <span class="month-hover">Nov</span>
-                            <span class="month-hover">Dec</span>
-                        </div><!-- months -->
-                        <hr class="month-line" />
-
-                        <div class="days">SUN MON TUE WED THU FRI SAT</div>
-                        <!-- days -->
-
-                        <div class="num-dates">
-
-                            <div class="first-week"><span class="grey">26 27 28 29 30 31</span> 01</div>
-                            <!-- first week -->
-                            <div class="second-week">02 03 04 05 06 07 08</div>
-                            <!-- week -->
-                            <div class="third-week"> 09 10 11 12 13 14 15</div>
-                            <!-- week -->
-                            <div class="fourth-week"> 16 17 18 19 20 21 22</div>
-                            <!-- week -->
-                            <div class="fifth-week"> 23 24 25 26 <strong class="white">27</strong> 28 29</div>
-                            <!-- week -->
-                            <div class="sixth-week"> 30 <span class="grey">01 02 03 04 05 06</span></div>
-                            <!-- week -->
-                        </div>
-                        <!-- num-dates -->
-                        <div class="event-indicator"></div>
-                        <!-- event-indicator -->
-                        <div class="active-day"></div>
-                        <!-- active-day -->
-
-                        <!-- event-indicator -->
-
-
-                    </div>
-                    <!-- calendar-base -->
-                    <div class="calendar-left">
-
-                        <div class="hamburger">
-                            <div class="burger-line"></div>
-                            <!-- burger-line -->
-                            <div class="burger-line"></div>
-                            <!-- burger-line -->
-                            <div class="burger-line"></div>
-                            <!-- burger-line -->
-                        </div>
-                        <!-- hamburger -->
-
-
-                        <div class="num-date">27</div>
-                        <!--num-date -->
-                        <div class="day">THURSDAY</div>
-                    </div>
-                    <!-- calendar-left -->
-
-                </div>
-                <!-- container -->
-
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Rest of content for this page should be put below here -->
-    <!-- Make a section in the css and then begin adding content here in sections. See home page for example. -->
+    </section>
 
 </body>
 
