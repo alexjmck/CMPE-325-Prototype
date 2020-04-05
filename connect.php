@@ -1,33 +1,24 @@
-<!doctype html>
-<html>
-
-
+<html lang="en">
 <head>
-
-    <link rel="stylesheet" href="css/screen.css" media="screen">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-
-    <form action="mood.php" method="POST">
-        <input type="radio" name="mood" value="sad" class="col-6">
-        <input type="radio" name="mood" value="happy" class="col-6">
-        <input type="radio" name="mood" value="okay" class="col-6">
+    <form action="">
+        <input type="text" name="mood">
         <button type="submit">Submit</button>
     </form>
-
 </body>
-
 </html>
 
 <?php 
 $user = 'root';
 $pass = '';
 $db = 'moods';
-$userMood = $_POST['mood'];
 
 $conn = new mysqli('localhost',$user,$pass,$db) or die();
-$dateID = date("Y-m-d");
+$dateID = date("d");
 echo($dateID);
 echo"working";
 
@@ -35,14 +26,14 @@ if($conn -> connect_error){
     die("connection not working". $conn->connect_error);
 }
 $sql = "INSERT INTO usermoodsnew (dateID, mood)
-        VALUES('$dateID', $userMood)";
+        VALUES('$dateID','Sad')";
 
 if($conn->query($sql)===TRUE){
     echo"New record inserted";
 }
 
 else{
-    
+    echo"error" .sql. "<br>" . $conn-> error;
 }
 
 $conn->close();

@@ -26,11 +26,8 @@
     <title>Landing page</title>
 </head>
 
-
-</head>
-
 <body>
-    <!-- Nav bar at bottom - If updated paste updated code on all pages-->
+
 
     <section id="landing">
         <div class="container">
@@ -39,82 +36,68 @@
                     <h1>How are you feeling?</h1>
                 </div>
             </div>
-
-            <form action=""></form>
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <label>
-                        <input type="radio" name="test" value="small" class="col-6">
-                        <img src="img/great.png"></img>
-                    </label>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <h2 class="mood-text">Great!</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <label>
-                        <input type="radio" name="test" value="small" class="col-6">
-                        <img src="img/good.png"></img>
-                    </label>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <h2 class="mood-text">Good</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <label>
-                        <input type="radio" name="test" value="small" class="col-6">
-                        <img src="img/okay.png"></img>
-                    </label>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <h2 class="mood-text">Okay</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <label>
-                        <input type="radio" name="test" value="small" class="col-6">
-                        <img src="img/sad.png"></img>
-                    </label>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <h2 class="mood-text">Sad</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <label>
-                        <input type="radio" name="test" value="small" class="col-6">
-                        <img src="img/verybad.png"></img>
-                    </label>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <h2 class="mood-text">Very Bad</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center last-one">
-                <div class="col-12">
-                    <div class="col-12 submit-mood align-items-center"><button type="button"
-                            class="btn btn-primary btn-lg btn-block">Submit !</button>
+            <form action="feelings.php" method="POST">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <label>
+                            <input type="radio" name="umood" value="great" class="col-6">
+                            <img src="img/great.png"></img>
+                        </label>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <h2 class="mood-text">Great!</h2>
                     </div>
                 </div>
-            </div>
 
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <label>
+                            <input type="radio" name="umood" value="good" class="col-6">
+                            <img src="img/good.png"></img>
+                        </label>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <h2 class="mood-text">Good</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <label>
+                            <input type="radio" name="umood" value="okay" class="col-6">
+                            <img src="img/okay.png"></img>
+                        </label>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <h2 class="mood-text">Okay</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <label>
+                            <input type="radio" name="umood" value="sad" class="col-6">
+                            <img src="img/sad.png"></img>
+                        </label>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <h2 class="mood-text">Sad</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <label>
+                            <input type="radio" name="umood" value="very sad" class="col-6">
+                            <img src="img/verybad.png"></img>
+                        </label>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <h2 class="mood-text">Very Sad</h2>
+                    </div>
+                </div>
+                <button type="Submit" value="Submit" class="btn btn-primary btn-lg btn-block">Submit !</button>
             </form>
-
-
-
-
-
 
 
             <div class="row justify-content-center">
@@ -124,7 +107,6 @@
                 </nav>
             </div>
     </section>
-
 </body>
 
 </html>
