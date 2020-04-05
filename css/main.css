@@ -34,7 +34,7 @@ body h2 {
 }
 
 .navbar {
-	background-color: #333;
+	background-color: #ECECEC;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -51,7 +51,7 @@ body h2 {
 
 .bottombtns:hover{
 	color: #fff;
-	background-color: #007bff;
+	background-color: #007AFF;
 }
 
 
