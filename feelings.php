@@ -2,9 +2,9 @@
 $umood = $_POST['umood'];
 if (!empty($umood)) {
     $host = "localhost";
-    $dbUsername = "root";
-    $dbPassword = "";
-    $dbname = "moods";
+    $dbUsername = "cmpe325";
+    $dbPassword = "DeathToAllHumans420!";
+    $dbname = "CMPE325";
     //create connection
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
     $dateID = date("d");
