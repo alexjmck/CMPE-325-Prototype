@@ -3,23 +3,29 @@
 /* General Theme override */
 
 body {
-	font-family: 'Open Sans', sans-serif;	
-	background: rgb(9,9,121);
-	background: linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(38,42,143,1) 0%, rgba(53,59,155,1) 16%, rgba(129,136,255,1) 100%) fixed; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;	
+	background: rgb(255,228,228);
+	background: -moz-linear-gradient(0deg, rgba(255,228,228,1) 0%, rgba(255,230,230,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(255,228,228,1) 0%, rgba(255,230,230,1) 100%);
+	background: linear-gradient(0deg, rgba(255,228,228,1) 0%, rgba(255,230,230,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe4e4",endColorstr="#ffe6e6",GradientType=1);  
 	height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 body h1 {
-	font-family: 'arvo', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 }
 
 body h2 {
-	font-family: 'Antic Slab', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 	padding: 10% 0;
 }
 
