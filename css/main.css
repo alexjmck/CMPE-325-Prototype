@@ -20,52 +20,117 @@ body h1 {
 
 body h2 {
 	font-family: 'Antic Slab', serif;
+	padding: 10% 0;
 }
 
-/* Nav Bar at bottom*/
-#tab-menu {
+.rel{
+	position: relative;
+}
+
+.navbar {
+	background-color: #333;
 	position: fixed;
-  	bottom: 0;
-  	background-color: #353839;
-  	color: #F0FFF0;
-  	width: 100%;
-  	height: 60px;
-  	z-index: 99;
-}
+	bottom: 0;
+	width: 100%;
+  }
 
-#tab-menu .item {
+  #tab-menu .item {
 	padding: 6px;
 }
 
-/* landing, main page */
-#landing {
+.card{
+	position: relative;
+	margin: 5%;
+	text-align: center;
+	padding: 15% 0;
+	bottom: 20px;
+	display: flex;
+}
 
+.bre{
+	padding: 10% 0%;
+}
+
+#landing .titleBre {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 5%;
+	font-size: 130px;
+    font-size: 1.5vh;
 }
 
 #landing .title {
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 20px;
+	font-size: 130px;
+    font-size: 1.5vw;
 }
 
 #landing .how-you {
+	position: relative;
 	height: 250px;
 	width: 85vw;
-	text-align: center;
 	margin-bottom: 12px;
-}
-
-#landing .how-you h2 {
-
+	padding: 10% 0;
 }
 
 #landing .tracker-link {
-	margin-top: 12px;
 	height: 20vh;
 	width: 85vw;
-	text-align: center;
+
 }
 
+.navbarz{
+	position: fixed;
+	bottom: 0;
 
+}
 
+.imgCalms{
+	padding: 1% 5%;
+	margin-bottom: 12%;
+	width: 100%;
+	border-radius: 30px;
+}
 
+/*calmMe.html*/
+.gif-st{
+	width: 100%;
+	height: auto;
+	margin: 5% 0;
+	background-position: center;
+	background-size: cover;
+}
+
+.okay{
+	padding: 2% 2%;
+	text-align: center;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+  }
+
+  button{
+	  padding: 10px;
+	  margin-top: 5%;
+	  width: 100%;
+	  margin-bottom: 10%;
+	  bottom: auto;
+  }
+
+.okayBtn{
+	text-align: center;
+	justify-content: center;
+}
+
+.feeling-imgs{
+	width: 100px;
+	height: auto;
+	margin: 5% 0;
+	background-position: center;
+}

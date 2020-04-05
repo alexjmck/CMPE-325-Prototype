@@ -1,0 +1,82 @@
+/* Important stuff for this demo. */
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 15px;
+  }
+    
+  /* Aaaand just some general styling. */
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  
+  .container {
+    margin: 0 auto;
+    padding: 5%;
+    width: 75%;
+  }
+  
+  .mood-text{
+    font-size: 30px;
+    font-size: 7.5vw;
+    text-align: center;
+  }
+
+  p, li {
+    line-height: 1.5
+  }
+  
+  li {
+    margin-bottom: 7px;
+  }
+  
+  p + p {
+    margin-top: -7px;
+  }
+  
+  code {
+    background: #eee;
+    padding: 2px 5px;
+    font-size: 90%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 2px;
+  }
+  
+  .pics_in_a_row {
+    margin: 25px 0;
+  }
+  
+  .pics_in_a_row > div:not(:last-child) {
+    margin-right: 2%;
+  }
+  
+  /* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 2px solid rgb(231, 109, 109);
+  }
+
+  .last-one{
+      margin-bottom: 30px;
+  }
+
+  .submit-mood{
+      width: 100%;
+  }

@@ -37,6 +37,6 @@ if (!empty($umood)) {
  echo "All field are required";
  die();
 }
-header('Location: index.html');
+header('Location: calender.html');
 
 ?>
