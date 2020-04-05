@@ -1,43 +1,48 @@
-<?php 
-$umood = $_POST['submit'];
-echo"$umood";
-if (!empty($umood)) {
-    $host = "localhost";
-    $dbUsername = "root";
-    $dbPassword = "";
-    $dbname = "moods";
-    //create connection
-    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
-
-    if (mysqli_connect_error()) {
-     die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
-    } else {
-      echo"connection made";
-     
-     $SELECT = "SELECT id From register Where id = $umood";
-     //Prepare statement
-     $stmt = $conn->prepare($SELECT);
-     $stmt->bind_param("i", $id);
-     $stmt->execute();
-     $stmt->bind_result($id);
-     $stmt->store_result();
-     $rnum = $stmt->num_rows;
-     if ($rnum==0) {
-      $stmt->close();
-      $stmt = $conn->prepare($INSERT);
-      $stmt->bind_param("s", $umood);
-      $stmt->execute();
-      echo "New record inserted sucessfully";
-     } else {
-      echo "Did not work";
-     }
-     $stmt->close();
-     $conn->close();
-    }
-} else {
- echo "All field are required";
- die();
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table with database</title>
+<style>
+table {
+border-collapse: collapse;
+width: 100%;
+color: #588c7e;
+font-family: monospace;
+font-size: 25px;
+text-align: left;
 }
-header('Location: index.html');
+th {
+background-color: #588c7e;
+color: white;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+</style>
 
+</head>
+<body>
+<table>
+<tr>
+<th>Day of the month</th>
+<th>How I was feeling</th>
+</tr>
+
+<?php
+$conn = mysqli_connect("localhost", "root", "", "moods");
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT id, umood FROM register";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+echo "<tr><td>" . $row["id"]. "</td><td>". $row["umood"]. "</td><td>";
+}
+echo "</table>";
+} else { echo "0 results"; }
+$conn->close();
 ?>
+</table>
+</body>
+</html>

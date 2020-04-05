@@ -2,12 +2,12 @@
 $umood = $_POST['umood'];
 if (!empty($umood)) {
     $host = "localhost";
-    $dbUsername = "cmpe325";
-    $dbPassword = "DeathToAllHumans420!";
-    $dbname = "CMPE325";
+    $dbUsername = "root";
+    $dbPassword = "";
+    $dbname = "moods";
     //create connection
-    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
-    $dateID = date("d");
+    $conn = mysqli_connect($host, $dbUsername, $dbPassword, $dbname);
+    $dateID = date("y-m-d");
     if (mysqli_connect_error()) {
      die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
     } else {
