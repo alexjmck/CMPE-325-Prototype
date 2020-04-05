@@ -38,6 +38,17 @@ body h2 {
 	padding: 6px;
 }
 
+.bottombtns{
+	padding-right: 6px;
+	margin-right: 5px;
+}
+
+.bottombtns:hover{
+	color: #fff;
+	background-color: #007bff;
+}
+
+
 .card{
 	position: relative;
 	margin: 5%;
